@@ -1,0 +1,7 @@
+zero padding 
+img name: zeropadding01.png
+: https://mc.ai/beginner-to-advance-convolutional-neural-networks-made-easy-part-1/
+
+pooling layer 
+img name : pooling01.png
+: https://mc.ai/beginner-to-advance-convolutional-neural-networks-made-easy-part-1/
