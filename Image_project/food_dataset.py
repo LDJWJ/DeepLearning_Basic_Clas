@@ -11,7 +11,7 @@ print(os.getcwd())
 ## 분류 데이터 로딩
 
 #%%
-root_dir = "./Image_project/kfood/"
+root_dir = "./kfood/"
 # 카테고리 명령 지정 (1)
 categories = ["Chicken", "Dolsotbab", "Jeyugbokkeum", "Kimchi", 
                 "Samgyeobsal", "SoybeanPasteStew"]

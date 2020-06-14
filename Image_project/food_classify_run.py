@@ -12,11 +12,11 @@ import numpy as np
 
 #%%
 # 테스트 이미지 목록 (1)
-image_files = ["./Image_project/kfood/Chicken/chicken_01.jpg",
-               "./Image_project/kfood/Chicken/chicken_02.jpg",
-               "./Image_project/kfood/Kimchi/kimchi15.jpg",
-               "./Image_project/kfood/Kimchi/kimchi07.jpg",
-               "./Image_project/kfood/Samgyeobsal/Samgyeobsal04.jpg"]
+image_files = ["./kfood/Chicken/chicken_01.jpg",
+               "./kfood/Chicken/chicken_02.jpg",
+               "./kfood/Kimchi/kimchi15.jpg",
+               "./kfood/Kimchi/kimchi07.jpg",
+               "./kfood/Samgyeobsal/Samgyeobsal04.jpg"]
 image_size = 64
 nb_classes = len(image_files)
 categories = ["Chicken", "Dolsotbab", "Jeyugbokk-eum", "Kimchi",
@@ -40,7 +40,7 @@ X = np.array(X)
 
 #%%
 # 모델 파일 읽어오기  (3)
-model = load_model('./Image_project/kfood/kfood_model.h5')
+model = load_model('./kfood/kfood_model.h5')
 
 # 예측 실행  (4)
 pre = model.predict(X)

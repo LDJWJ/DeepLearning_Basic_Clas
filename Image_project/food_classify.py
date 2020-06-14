@@ -15,7 +15,7 @@ import numpy as np
 
 #%%
 ## 초기 설정
-root_dir = "./Image_project/kfood/"
+root_dir = "./kfood/"
 categories = ["Chicken", "Dolsotbab", "Jeyugbokk-eum", "Kimchi", 
                 "Samgyeobsal", "SoybeanPasteStew"]
 nb_classes = len(categories)
@@ -24,7 +24,7 @@ image_size = 64
 #%%
 # 데이터 로딩  (1)
 def load_dataset():
-    x_train, x_test, y_train, y_test = np.load("./Image_project/kfood/kfood.npy", allow_pickle = True)
+    x_train, x_test, y_train, y_test = np.load("./kfood/kfood.npy", allow_pickle = True)
     x_train = x_train.astype("float") / 256
     x_test = x_test.astype("float") / 256
     y_train = np_utils.to_categorical(y_train, nb_classes)
@@ -78,4 +78,4 @@ model = model_train(x_train, y_train)
 model_eval(model, x_test, y_test)
 
 # 모델 저장
-model.save("./Image_project/kfood/kfood_model.h5")
+model.save("./kfood/kfood_model.h5")
